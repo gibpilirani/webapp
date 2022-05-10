@@ -1,0 +1,691 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between; 
+  font-family: sans-serif;
+}
+
+.website-brand {
+  position: relative;
+  top: -5px;
+  text-transform: none;
+  display: inline-block;
+  color: #ffffff;
+  font-family: cursive;
+}
+
+.registerLabel {
+  width: 600px;
+}
+
+hr {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  border: 0;
+  color: red;
+}
+
+/*-----Story titles-----*/
+.story-titles {
+  color: #7f7f7f;
+}
+
+/*  links for articles  */
+.article a:link {
+  color: #0000ff !important;
+}
+.article a:visited {
+  color: #0000ff !important;
+}
+.article a:hover {
+  color: #add8e6 !important;
+  text-decoration: underline !important;
+}
+.article a:active {
+  color: #0000ff !important;
+}
+
+.form-container {
+  background: white;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 1em #ddd;
+}
+ 
+.error {
+  color: red;
+  margin: 0.5em 0;
+}
+label span {
+  color: #d9534f;
+}
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close*/
+ }
+
+/*========= Featured articles links ======================*/
+.featured-link {
+   color: #000000;
+}
+
+.featured-summary {
+  color: #444444;
+}
+.featured-summary:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.featured-summary button {
+  border-radius: 8px;
+  border: 0px;
+  color: #ffffff; 
+  font-weight: bold;
+  background-color: #fb8f4f;
+}
+.featured-summary button:hover {
+  text-decoration: none;
+  color: #ffffff; 
+  background-color: #000000;
+}
+.featured-link:hover {
+  text-decoration: none;
+  color: #fb8f4f;
+}
+
+.box:hover  {
+  text-decoration: none;
+  border: solid #fb8f4f 1px;
+}
+
+.title-feature {
+  height: 300px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+hr.line {
+    display: block;
+    height: 2px;
+    background: #fb8f4f;
+    width: 100%;
+    border: none;
+    /*border-top: solid 3px #aaa;*/
+}
+
+.featured-img {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/*================================Separator=================*/
+.line-vertical {
+  width: 1px;
+  height: 34px;
+  float: left;
+  background-color: blue;
+  margin: 10px;
+}
+
+
+
+.right-panel {
+  background-color: none
+}
+
+/*========================Main menu =========================*/
+.main-menu{
+  color: #ffffff;
+}
+
+.main-menu a:link{
+  color: #ffffff;
+
+}
+
+.main-menu a:visited{
+  color: #0000FF;
+}
+
+
+.header {
+  background-image: url(images/header.png); 
+  background-repeat: no-repeat; height: 100px; 
+  background-position: right; padding: 0px;
+
+}
+
+
+.top-bar {
+    background-color: #2787ea !important; 
+  }
+
+
+/*================ Main menu ===============================*/
+/* Navigation Bar */
+
+.bg-menu {
+  background-color: #fb8f4f;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+
+.navbar-light {
+  background-color: #fb8f4f;
+  margin-right: 0;
+}
+
+.navbar{
+  padding: 0;
+}
+
+ul .navbar-nav, .nav-item a{
+  color: #ffffff !important;
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.nav-item a { 
+  height: 100%;
+  width: 100%;
+ }
+
+a:active {
+  width: 100%;
+  background-color: #000000 !important;
+  color: red;
+}
+
+ul .nav-item a:hover:not(.active) {
+  width: 100%;
+  height: 120%;
+  background-color: #000000 !important;
+}
+
+li .nav-link {
+  margin-right: 10px;
+}
+.menu-box {
+  margin: 0;
+  padding: 0;
+}
+
+
+.dropdown-menu a {
+  height: inherit;
+  background-color: #FB8F4F;
+  float: left;
+  text-align: left;
+  border-bottom: 2px solid #000000;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+
+#topNav {
+  margin-bottom:0;
+}
+
+.edit a {
+  height: 10px;
+  padding: 10px;
+}
+/*-----------------Loign logout register menu----------*/
+.rlmenu {
+  color: #ffffff !important;
+}
+
+.rlmenu:hover{
+  text-decoration: none;
+  color: red;
+}
+
+/*======================= HOME BRAND =============================*/
+#home-brand {
+  background-color: #ffffff;
+}
+
+.line-bottom {
+  position: relative;
+  transform: translate(0%, 1%);
+  display: flex;
+  border-bottom: solid 2px #808080;
+  height: 220px !important;
+}
+
+.website-title {
+  opacity: 0.5;
+  color: #000000;
+  padding: 2% 5%;
+  height: 55%;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  background-color: #4863a0;
+  margin-top: auto;
+  bottom: 0;
+}
+
+
+
+hr.footer {
+  display: block;
+  height: 3px;
+  background-color: #FFFFFF;
+  width: 90%;
+}
+
+
+/* ----------- Popular ----------*/
+.right-panel hr {
+  display: block;
+  height: 3px;
+  background: #808080;
+  width: 100%;
+  border: none;
+}
+
+.popular {
+  list-style: none;
+  display: block;
+  color: #ffffff;
+  padding: 50px;
+  margin: 0;
+  text-align: justify;
+}
+
+.popular li {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  color: #7f7f7f;
+  border-bottom: 2px solid #808080;
+}
+
+/*.popular li:nth-child(odd) { background: #808080;  color: #ffffff;}
+.popular li:nth-child(even) { background: #a9a9a9;  color: #ffffff;}
+*/
+.popular a {
+  color: #7f7f7f;
+}
+
+.popular li:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.popular a:hover{
+  text-decoration: underline;
+}
+
+/* Quick-zoom Container */
+.img-zoom img {
+  transform-origin: 0 0;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+/* The Image container */
+.img-zoom {
+  
+  overflow: hidden; /* Removing this will break the effects */
+}
+/* The Transformation */
+.img-zoom:hover img {
+  transform: scale(2);
+}
+
+
+/*  Contact */
+
+.btnContact{
+    padding-left: 1200px;
+    position: relative;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+/*========== REGISTRATION FORM =============================*/
+.lastnameMsg .firstnameMsg .emailMsg .repeatEmailMsg .notmatchMsg .passwordMsg .psdReMatchMsg .psdMatchMsg{
+  color: red;
+  background-color: yellow;
+}
+.hidden {
+  visibility: hidden;
+  display: none;
+  clear: none;
+}
+
+/*--------------Popular, categories and featured -----------------*/
+.header-title {
+  height: 40px; 
+  padding: 5px 0 0 2px;
+  font-weight: bold;
+}
+ul .category {
+  padding: 0px;
+  width: 100%;
+}
+.category li {
+  padding-top: 10px;
+  height: 50px;
+  color: #ffffff;
+  border-bottom: solid #7f7f7f 1px;
+ }
+
+.category li a {
+  display: block;
+  padding-left: 20px; 
+  color: #7f7f7f;
+  
+}
+
+ul .category li a:hover {
+  text-decoration: underline;
+  width: 100%;
+}
+
+
+.category li:nth-child(odd) { 
+  background: #ffffff;  color: #000000;
+  font-weight: bold;
+}
+
+.category li:nth-child(even) { 
+  background:   #ffffff;  color: #000000;
+  font-weight: bold;
+}
+
+/*--------------MENU TOGGLE---------------*/
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {   
+    left: 100%;
+    width: 100%;
+   visibility: visible;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    text-align: left;
+  }
+}
+
+/*--------------- Login -------------------*/
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* textarea formatting */
+.mce-container {
+   border: 0px !important;
+}
+
+
+/*------ Gallery ---------*/
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+.description {
+  color: #ffffff;
+}
+
+/*----Articles --------*/
+.article a:hover{
+  text-decoration: none;
+}
+
+.article-border {
+  border: solid 2px #d3d3d3d3;
+  border-radius: 5px;
+}
+.articl-title {
+  border-bottom: solid 3px #d3d3d3d3;
+}
+
+/* .image-box {
+  position: fixed;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: block; remove extra space below image 
+  padding-left: 100px;
+} */
+/* .box{
+  width: 250px !important;        
+  border: 5px solid black;
+} */
+
+/* ---------------Search results ------------*/
+div.search:nth-child(even) {background: #c0c0c0c0;}
+div.search:nth-child(odd) { background: #d3d3d3d3;}
+
+.btn-search {
+  border-radius: 0px 12px 12px 0px;
+}
+
+.input-search {
+  border-radius: 12px 0px 0px 12px;
+}
+
+/*----------------- articles -------------*/
+.article-title {
+  font-weight: bold;
+}
+
+.article-line-1 {
+  border-top: 1px solid #c8c8c8;
+  padding-bottom: 10px;
+}
+
+.article-line-2 {
+  border-top: 3px solid #c8c8c8;
+  padding-bottom: 10px;
+}
+
+/* --------------- Downloads --------------*/
+.download-header {
+  border-bottom: solid #000000 2px;
+  font-size: 20px;
+}
+.download-list {
+  border-bottom: solid #c8c8c8 2px;
+}
+/*div.download-list:nth-child(even) {background: #c0c0c0c0;}
+div.download-list:nth-child(odd) { background: #d3d3d3d3;}
+*/
+
+
+/* displays the content inside, as these settings in the parent breaks the effect */
+.skew {
+    background-color: #c0c0c0c0;
+    position:relative;  
+}
+.skew:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 0; 
+    height: 100%; 
+    border-top: 211px solid #ffffff; 
+    border-right: 130px solid transparent; 
+}
+
+/* ------------- Slide show quotes -------------- */
+#slideshow {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 200px;
+  text-align: center; 
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: transparent;
+  margin-left: 100px;
+  width: 350px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding-top: 2px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding-left: -20px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: transparent;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/* Update profile */
+#error {
+  position: relative;
+  bottom: 20px;
+  padding-left: 20px;
+}
+
+.update-profile {
+  margin: auto;
+}
+
+.update-radio {
+  padding-left: 12px;
+}
+
+/*------Front page headers----*/
+.header-color {
+  color: #000000;
+}
+
+/* Chceck user availability before sigup */
+.error_show{
+  color: red;
+}
+
+.error {
+  display: none;
+}
+
+
+/* loading message   */
+.loading-message {
+  position: absolute;
+  top: -100px;
+}
+
+#loading{
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  display: block
+}
+

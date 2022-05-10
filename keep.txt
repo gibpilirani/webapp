@@ -1,0 +1,80 @@
+if (!empty($lastname) AND !empty($firstname) AND !empty($email) AND !empty($repeatEmail) AND !empty($password) AND !empty($repeatPassword) AND !empty($gender) AND !empty($designation)) {             
+    // name of the uploaded file
+    $filename = $_FILES['file']['name'];
+    // destination of the file on the server
+    $destination = 'profile/' . $filename;
+    // get the file extension
+    $extension = pathinfo($filename, PATHINFO_EXTENSION);
+    // the physical file on a temporary uploads directory on the server
+    $file = $_FILES['file']['tmp_name'];
+    $size = $_FILES['file']['size'];
+    if (!in_array($extension, ['jpeg', 'jpg', 'gif', 'png'])) {
+      $file = "You file extension must be .jpeg, .gif, .gif or .png";
+    } elseif ($_FILES['file']['size'] > 1000000) { 
+    // file shouldn't be larger than 1Megabyte
+      $response['status'] = 2;
+      $response['message'] = "The image is too large!";
+    } else {
+    // move the uploaded (temporary) file to the specified destination
+    if (move_uploaded_file($file, $destination)) {
+      $insert = $userObject->UserRegister($lastname, $firstname, $email, $password, $filename, $gender, $designation);
+
+      $insert_address = $userObject->address($address_one, $city, $country, $zip, $email);
+        if ($insert) {
+          $lastID = $insert->insert_id;
+          //$response['status'] = 1;
+
+          //Activate later
+          /*$response['message'] = base64_encode($lastID);
+
+          //Subject
+          $subject = 'Thank you for registering with us';
+          // my message to send to the user
+          $message = '<html><head>
+                     <title>Email Verification</title>
+                     </head>
+                     <body>';
+          $message .= '<h1>Hi ' . $firstname . ' ' . $lastname . '!</h1>';
+          //$message .= '<p><a href="'.SITE_URL.'activate.php?id=' . base64_encode($lastID) . '">CLICK TO ACTIVATE YOUR ACCOUNT</a>';
+          $message .= "<p>Thank for registering with us. We will inform you when your account is activated</p>";
+          $message .= "</body></html>";
+
+        require_once "PHPMailer/PHPMailer.php";
+        require_once "PHPMailer/SMTP.php";
+        require_once "PHPMailer/Exception.php";
+
+        $mail = new PHPMailer();
+
+        //SMTP Settings
+        $mail->isSMTP();
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = "histormalawi@gmail.com";
+        $mail->Password = 'Amblessed2022/';
+        $mail->Port = 465; //587
+        $mail->SMTPSecure = "ssl"; //tls
+
+        //Email Settings
+        $mail->isHTML(true);
+        $mail->setFrom("histormalawi@gmail.com", 'History of Computing');
+        $mail->addAddress("$email");
+        $mail->addAddress("histormalawi@gmail.com");
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        if ($mail->send()) {
+            $response['status'] = 1;
+            $response['message'] = "<span class='text-success'>Thank you for submitting your message</span>";
+        } else {
+            $response['status'] = 2;
+            $response['message'] = "<span class='text-danger'>Something is wrong</span.";
+        }*/
+         $response['status'] = 1;
+            $response['message'] = "<span class='text-success'>Thank you for submitting your message</span>";
+        }
+      }
+    }
+  } else {
+    $response['status'] = 3;
+    $response['message'] = 'Please fill all the required fields!';
+  }
